@@ -20,16 +20,22 @@ Your options are:
 // interpolation 
 // interprets white space
 
+
+
+
+
 function waitForUserInput(userInput) {
   if (userInput === '6') {
     console.log('Goodbye!');
     interface.close();
   } else {
+    console.clear();
     console.log('Type 6 to quit!')
     interface.question(menu, waitForUserInput);
   }
 };
 
+console.clear();
 interface.question(menu, waitForUserInput)
 
 
