@@ -17,3 +17,21 @@ Your options are:
 6. Quit.
 
 `
+// interpolation 
+// interprets white space
+
+function waitForUserInput(userInput) {
+  if (userInput === '6') {
+    console.log('You typed 6 to quit application')
+    interface.close();
+  } else {
+    waitForUserInput();
+  }
+};
+
+interface.question(menu, waitForUserInput)
+
+
+
+
+
