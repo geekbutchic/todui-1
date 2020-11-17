@@ -16,16 +16,17 @@ Your options are:
 5. Toggle a todo's priority.
 6. Quit.
 
-`
+`;
 // interpolation 
 // interprets white space
 
 function waitForUserInput(userInput) {
   if (userInput === '6') {
-    console.log('You typed 6 to quit application')
+    console.log('Goodbye!');
     interface.close();
   } else {
-    waitForUserInput();
+    console.log('Type 6 to quit!')
+    interface.question(menu, waitForUserInput);
   }
 };
 
